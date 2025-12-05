@@ -219,8 +219,13 @@
     body.fullscreen-mode header.controls {
       display: none !important;
     }
+    body.fullscreen-mode canvas {  
+width: 100vw !important;
+ height: 100vh !important;
+}
     
     /* 기본 레이아웃 */
+
     body {
       background: #333;
       display: flex;
@@ -307,7 +312,7 @@
           <option value="ocean">바다소리</option>
           <option value="fallen_leaves">낙엽소리</option>
           <option value="rain">빗소리</option>
-        
+          
           <option value="bonfire">모닥불 소리</option>
           <option value="restanrant">식당 소리</option>
           <option value="cafe">카페 소리</option>
