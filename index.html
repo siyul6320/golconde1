@@ -284,7 +284,7 @@ width: 100vw !important;
 
     .info0 { padding: Opx; margin: 5px; color: black; font-size: 12px; font-weight: bold; line-height: 1.7; } 
     .info1 { padding: Opx; margin: 5px; color: black; font-size: 12px; font-weight: normal; line-height: 1.7; }
-.info1 { padding: Opx; margin: 5px; color: #828282; font-size: 10px;}
+.info { padding: Opx; margin: 5px; color: #828282; font-size: 10px;}
 
     @keyframes fadeIn {
       from { opacity: 0; transform: translateX(55px) translateY(-10px); }
@@ -607,6 +607,7 @@ width: 100vw !important;
     }
 
     function drawWinter(ctx, x, y, size) {
+         size = size * 1.3;
         ctx.save();
         ctx.translate(x, y);
         const numBranches = 6;
@@ -655,7 +656,7 @@ width: 100vw !important;
 
     function drawSnowman(ctx, x, y, size) {
         ctx.save();
-        const baseSize = 60;
+        const baseSize = 80;
         const scale = size / baseSize;
         ctx.translate(x, y);
         ctx.scale(scale, scale);
